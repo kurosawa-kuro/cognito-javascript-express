@@ -1,4 +1,4 @@
-# Cognito TypeScript Express サンプルアプリケーション
+# Cognito JavaScript Express サンプルアプリケーション
 
 ## 環境構築
 
