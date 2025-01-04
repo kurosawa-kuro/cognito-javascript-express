@@ -11,11 +11,13 @@
     "typescript": "^5.6.3"
   },
   "devDependencies": {
+    "esbuild-register": "^3.6.0",
     "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
   },
   "scripts": {
     "start": "ts-node src/app.ts",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts"
+    "dev": "nodemon --exec node -r esbuild-register src/app.ts"
   }
 }
